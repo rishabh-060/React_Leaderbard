@@ -23,7 +23,7 @@ const Leaderboard = () => {
           key={topUsers[1].username} 
           className="top-leader rank-2" 
           style={{ 
-            background: "silver", 
+            background: "#f2e9e4", 
             color: "black", 
             padding: "20px", 
             borderRadius: "12px", 
@@ -32,11 +32,12 @@ const Leaderboard = () => {
             textAlign: "center"
           }}
         >
+          <span style={{fontSize:'32px', textShadow: '2px 2px 5px #eb5e28'}}>🥈</span>
+          <div className="rank-badge" style={{color: '#eb5e28', fontWeight:'bolder', paddingBottom: '8px'}}>Rank 2</div>
           <img src={topUsers[1].userProfile} alt={topUsers[1].fullName} className="profile-pic" />
           <div className="leader-info">
-            <span className="leader-name">{topUsers[1].fullName}</span>
-            <span className="leader-points">{topUsers[1].points} Pts</span>
-            <div className="rank-badge">Rank 2</div>
+            <div className="leader-name" style={{color: '#eb5e28', fontWeight:'bolder', paddingTop: '8px'}}>{topUsers[1].fullName}</div>
+            <div className="leader-points" style={{color:'#eb5e28', fontWeight:'bold'}}>{topUsers[1].points} 🪙</div>
           </div>
         </div>
 
@@ -44,7 +45,7 @@ const Leaderboard = () => {
           key={topUsers[0].username} 
           className="top-leader rank-1" 
           style={{ 
-            background: "gold", 
+            background: "#fad643", 
             color: "black", 
             padding: "25px", 
             borderRadius: "15px", 
@@ -53,11 +54,12 @@ const Leaderboard = () => {
             textAlign: "center"
           }}
         >
+          <span style={{fontSize:'32px', textShadow: '2px 2px 5px #bbb'}}>🏆</span>
+          <div className="rank-badge" style={{color: '#eb5e28', fontWeight:'bolder', paddingBottom: '8px'}}>Rank 1</div>
           <img src={topUsers[0].userProfile} alt={topUsers[0].fullName} className="profile-pic" />
           <div className="leader-info">
-            <span className="leader-name">{topUsers[0].fullName}</span>
-            <span className="leader-points">{topUsers[0].points} Pts</span>
-            <div className="rank-badge">Rank 1</div>
+            <div className="leader-name" style={{color: '#eb5e28', fontWeight:'bolder', paddingTop: '8px'}}>{topUsers[0].fullName}</div>
+            <div className="leader-points" style={{color:'#eb5e28', fontWeight:'bold'}}>{topUsers[0].points} 🪙</div>
           </div>
         </div>
 
@@ -65,7 +67,7 @@ const Leaderboard = () => {
           key={topUsers[2].username} 
           className="top-leader rank-3" 
           style={{ 
-            background: "#cd7f32", 
+            background: "#cb8c47", 
             color: "black", 
             padding: "20px", 
             borderRadius: "12px", 
@@ -74,11 +76,12 @@ const Leaderboard = () => {
             textAlign: "center"
           }}
         >
+          <span style={{fontSize:'32px', textShadow: '2px 2px 5px #fff'}}>🥉</span>
+          <div className="rank-badge" style={{color: 'white', fontWeight:'bolder', paddingBottom: '8px'}}>Rank 3</div>
           <img src={topUsers[2].userProfile} alt={topUsers[2].fullName} className="profile-pic" />
           <div className="leader-info">
-            <span className="leader-name">{topUsers[2].fullName}</span>
-            <span className="leader-points">{topUsers[2].points} Pts</span>
-            <div className="rank-badge">Rank 3</div>
+            <div className="leader-name" style={{color: 'white', fontWeight:'bolder', paddingTop: '8px'}}>{topUsers[2].fullName}</div>
+            <div className="leader-points" style={{color:'#fff', fontWeight:'bold'}}>{topUsers[2].points} 🪙</div>
           </div>
         </div>
       </div>
@@ -89,7 +92,7 @@ const Leaderboard = () => {
             <span className="rank">#{indexOfFirstUser + index + 4}</span>
             <img src={user.userProfile} alt={user.fullName} className="profile-pic" />
             <span className="name">{user.fullName}</span>
-            <span className="points">{user.points} Pts</span>
+            <span className="points">{user.points} 🪙</span>
           </div>
         ))}
       </div>
