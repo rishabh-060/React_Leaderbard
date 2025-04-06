@@ -1,0 +1,131 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.leaderboard-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #af24ff5d;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+.top-three {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to right, #a4ebf5, #f2f2f2);
+  padding: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.leaderboard-list {
+  padding: 140px 0 18px; /* Increased top padding */
+  max-height: calc(100vh - 220px);
+  overflow-y: auto;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: #f9f0ff;
+  border-radius: 12px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.leaderboard-item img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #666;
+}
+
+.leaderboard-item .rank {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+}
+
+.leaderboard-item .points {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.pagination button {
+  padding: 12px 18px;
+  background: linear-gradient(145deg, #ddd, #bbb);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.pagination button:hover {
+  background: linear-gradient(145deg, #aaa, #888);
+}
+
+@media (max-width: 768px) {
+  .leaderboard-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .leaderboard-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 95%;
+  }
+
+  .top-three {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
