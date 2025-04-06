@@ -3,7 +3,7 @@
 A modern **Leaderboard UI** built with **React.js**, showcasing user rankings with sticky top 3 positions and paginated results.
 
 ## 🌐 Live Demo
-[Leaderboard App](https://frabjous-peony-b60855.netlify.app/)
+[Leaderboard App](https://my-leaderboard-01.netlify.app/)
 
 ---
 
