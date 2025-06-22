@@ -7,11 +7,6 @@ A modern **Leaderboard UI** built with **React.js**, showcasing user rankings wi
 
 ---
 
-## 📸 Preview
-![Leaderboard UI](https://your-image-url.com)
-
----
-
 ## 📌 Features
 ✅ Displays user rankings dynamically  
 ✅ **Top 3** ranks remain fixed on all pages  
